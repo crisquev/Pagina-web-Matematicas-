@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menú Desplegable</title>
+	<link rel="stylesheet" href="estilo.css">
+	<style>
+	
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Open sans';
+}
+body{
+	background-image: url(hero.jpg);
+	background-size: cover;
+}
+nav{
+	max-width: 900px;
+	margin:auto;
+	background-color: #333;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li >a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+.menu-horizontal> li:hover{
+	background-color: red;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0,0,0,.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display:block;
+}
+.menu-vertical li:hover{
+	background-color: black;
+}
+.menu-vertical li a{
+	display: block;
+	color: white;
+	padding: 15px 15px 15px 20px;
+}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="menu-horizontal">
+			<li><a href="#">Conceptos</a>
+			<ul class="menu-vertical">
+					<li><a href="file:///C:/Users/crist/OneDrive/Documentos/ConceptoRaicesComplejas.html">Raices complejas</a></li>
+					<li><a href="#">Laplace Inversa</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Temas</a>
+				<ul class="menu-vertical">
+					<li><a href="#">Raices complejas</a></li>
+					<li><a href="#">Laplace Inversa</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">¿Cómo se realizan?</a>
+				<ul class="menu-vertical">
+					<li><a href="#">Raices complejas</a></li>
+					<li><a href="#">Laplace Inversa</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Ver más</a>
+			<ul class="menu-vertical">
+					<li><a href="#">Raices complejas</a></li>
+					<li><a href="#">Laplace Inversa</a></li>
+				</ul>
+			</li>
+
+		</ul>
+	</nav>
+</body>
+</html>
+
